@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/montura/ROS_Workaspace/catkin_ws/src/hello_world/build/devel/setup.sh

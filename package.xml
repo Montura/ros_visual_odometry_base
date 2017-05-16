@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>hello_world</name>
+  <version>0.0.1</version>
+  <description>The hello_world package. It contains one node that prints a
+               message on a screen</description>
+
+  <maintainer email="ant.filatov@gmail.com">anton</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rosbag</build_depend>
+  <build_depend>rostime</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>roslib</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>genmsg</build_depend>
+  <build_depend>opencv2</build_depend>
+  <run_depend>opencv2</run_depend>
+</package>
