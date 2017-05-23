@@ -1,0 +1,2 @@
+Options: 
+CMake: 3.7.2@/home/montura/Development/CLion/bin/cmake/bin/cmake

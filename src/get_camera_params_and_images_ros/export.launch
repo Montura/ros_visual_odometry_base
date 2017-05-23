@@ -1,0 +1,23 @@
+<launch>
+    <node pkg="rosbag" type="play" name="rosbag" args="-d 2 /home/montura/yandexDisk/Projects/Clion/visual_odometry/2011-01-25-06-29-26.bag"/>
+
+    <node name="extract" pkg="image_view" type="extract_images" respawn="false" output="screen" cwd="ROS_HOME">
+        <remap from="image" to="/wide_stereo/left/image_rect_throttle"/>
+        <param name="filename_format" value="/home/montura/yandexDisk/Projects/Clion/visual_odometry/images_06_29_26/left_frame%06i.jpg"/>
+    </node>
+
+    <node name="extract2" pkg="image_view" type="extract_images" respawn="false" output="screen" cwd="node">
+        <remap from="image" to="/wide_stereo/left/image_rect_throttle"/>
+        <param name="filename_format" value="/home/montura/yandexDisk/Projects/Clion/visual_odometry/images_06_29_26/left_frame%06i.jpg"/>
+    </node>
+
+    <node name="extract3" pkg="image_view" type="extract_images" respawn="false" output="screen" cwd="ROS_HOME">
+        <remap from="image" to="/wide_stereo/right/image_rect_throttle"/>
+        <param name="filename_format" value="/home/montura/yandexDisk/Projects/Clion/visual_odometry/images_06_29_26/right_frame%06i.jpg"/>
+    </node>
+
+    <node name="extract4" pkg="image_view" type="extract_images" respawn="false" output="screen" cwd="node">
+        <remap from="image" to="/wide_stereo/right/image_rect_throttle"/>
+        <param name="filename_format" value="/home/montura/yandexDisk/Projects/Clion/visual_odometry/image_06_29_26/right_frame%06i.jpg"/>
+    </node>
+</launch>

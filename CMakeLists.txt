@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(hello_world)
+project(visodometry)
 
 find_package(OpenCV 3 REQUIRED)
 
@@ -19,6 +19,6 @@ include_directories(include ${catkin_INCLUDE_DIRS}
 
 #catkin_package(DEPENDS eigen opencv)
 
-add_executable(visual_odometry src/visual_odometry_base.cpp)
+add_executable(visual_odometry src/visual_odometry_base.cpp src/transformation_pose.h src/feature_detection.h src/motion_estimation.h)
 target_link_libraries(visual_odometry ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
