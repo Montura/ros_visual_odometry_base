@@ -13,7 +13,6 @@
  * Eigen 3.3
  * */
 
-
 #include <message_filters/time_synchronizer.h>
 #include "message_filters/sync_policies/approximate_time.h"
 #include <sensor_msgs/Image.h>
@@ -37,7 +36,6 @@ std::vector<cv::Point2f> prevFeatures, currFeatures;
 // Main visual odometry process. You can change feature tracking to feature matching and "re-define" them
 // with SURF|SIFT|ORB and etc.
 // Also you can change calculating motion (R,t) from E.
-
 void visual_odometry(cv::Mat const & img_1, cv::Mat const & img_2, size_t const timestamp, std::vector<tfPose> & motions) {
     if (first_image_pair) {
         prevImage = img_1;

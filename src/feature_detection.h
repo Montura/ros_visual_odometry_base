@@ -5,17 +5,8 @@
 #ifndef FEATURE_DETECTION_H
 #define FEATURE_DETECTION_H
 
-
-
-
-//#include "opencv2/video/tracking.hpp"
-//#include "opencv2/highgui/highgui.hpp"
-//#include "opencv2/features2d/features2d.hpp"
-//#include "opencv2/calib3d/calib3d.hpp"
 #include "opencv2/xfeatures2d.hpp"
 #include "opencv2/opencv.hpp"
-
-
 
 
 //// image processing with feature matching
